@@ -25,6 +25,7 @@ get_header(); ?>
 
 <div class="bgourstory">	
 </div>
+Test
 <div class="row">
 	<div id="primary" class="site-content small-12 medium-12 columns">
 		
