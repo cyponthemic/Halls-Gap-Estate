@@ -76,3 +76,17 @@ function my_addlightboxrel($content) {
 
 if ( ! isset( $content_width ) )
     $content_width = 1000;
+    
+    
+    
+  /*
++++++++  
+  FOOTER MENU REGISTRATION
+  +++++++
+*/
+
+add_action( 'after_setup_theme', 'register_my_menu' );
+function register_my_menu() {
+  register_nav_menu( 'footercontent', 'Content menu footer' );
+  register_nav_menu( 'footerebusiness', 'Ebusiness menu footer' );
+}

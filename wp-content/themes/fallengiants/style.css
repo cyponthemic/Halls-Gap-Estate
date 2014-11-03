@@ -152,10 +152,17 @@ iframe:hover {
   font-size: 40px;
   padding-right: 10px;
   position: relative;
-  top:10px;
+  top:-2px;
   color: white;
   
 }
+
+.entypo-mail:before,
+.entypo-phone:before{
+	  font-size: 20px;
+	  top: 3px;
+}
+
 [class*="entypo-"]{
 list-style: none;
 
@@ -362,6 +369,7 @@ content: " ";
 position: absolute;
 background-image: url(bg/cellardoorend.png);
 background-position: center center;
+background-repeat: no-repeat;
 background-size:  100%;
 height: 590px;
 width: 100%;
@@ -385,6 +393,10 @@ background-repeat: no-repeat;
 font-size: 40px;
 line-height: 1;
 }
+
+
+
+#footer hr,
 #cellar-door hr, 
 #find-us hr {
 	opacity: 0;
@@ -400,6 +412,13 @@ margin: 0;
 
 [class*="entypo-"]>a {
 	padding-bottom: 5px;
+	color: white;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+#findus a {
+	color: black;
 }
 .winerow {
 	padding-bottom: 100px;
@@ -442,15 +461,57 @@ padding-bottom: 50px;
 
 #footer {
 	background-color: black;
-	height: 400px;
 }
 
 
+#menu-footer ul{
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+	margin-top: 5px;
+}
+
+#menu-footer-ebusiness li,
+#menu-footer li{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	list-style: none;
+}
+
+
+#menu-footer ul.sub-menu>li>a{
+	font-style: italic;
+	text-transform: none;
+	letter-spacing: normal;
+	color: rgba(255,255,255,0.65);
+}
+#menu-footer ul.sub-menu>li:hover>a{
+color: white;
+}
+#footer .button{
+	background-color: black;
+	border: 2px white solid;
+	color: white;
+	font-size: 18px;
+	}
+#footer .legal {
+	color: white;
+	margin-top: 30px;
+	border-top: 2px solid white;
+	padding: 30px;
+	text-align: center;
+}
 /* ECOMMERCE */
 .breadcrumbs {
 	display: none;
 }
 
+.woocommerce div.product span.price, .woocommerce div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content div.product p.price {
+	color: black 	;
+}
 
 .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary,
 .woocommerce #content div.product div.images{

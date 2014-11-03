@@ -79,6 +79,5 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 </div>
 </div><!-- #product-<?php the_ID(); ?> -->
-
-
+<?php get_footer(); ?>
 
