@@ -8,10 +8,10 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
-
+ 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
-<div class="row">
+<div class="row wc-single">
 <?php
 	/**
 	 * woocommerce_before_single_product hook
@@ -28,33 +28,31 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="row">
-	<div class="small-12 medium-6 columns single-product-image">
+	<div class="small-12 medium-5 large-6 columns">
+		<div class="single-product-image">
 	
 	<?php woocommerce_show_product_images(); ?>
 	
-	<?php 
-		
-	?>
+		</div>
 	</div>
-	<div class="small-12 medium-6 columns">
+	<div class="small-12 medium-7 large-6 columns">
 		<div class="row single-product-content">
 			<div class="small-12 columns single-product-title">
-				<h1 style="text-transform:uppercase;"><?php get_winery(); ?></h1>
-				<h2><i><?php get_vineyard(); ?></i> </h2>
-				<h3><?php get_variety(); ?>&nbsp<?php get_vintage(); ?></h3>
+			<?php get_wine_title()?>
 			</div>
 			<div class="small-12 columns single-product-description">
 			<?php>woocommerce_template_single_excerpt();?>
 			
 			</div>
-			<hr class="price-separator">
-			<div class="small-3 columns">
+			<hr>
 			<?php>woocommerce_template_single_price();?>
-			</div>
-			<div class="small-9 columns single-product-price">
+			<div class="small-8 columns single-product-price">
+			
 			<?php>woocommerce_simple_add_to_cart();?>
 			</div>
+			<hr>
 			<?php woocommerce_upsell_display();?>
+			<hr>
 		</div>
 		
 		<div class="row">

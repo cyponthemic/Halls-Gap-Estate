@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /FallenGiants/fallengiants/
+RewriteBase /hallsgapestate/HallsGapEstate/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /FallenGiants/fallengiants/index.php [L]
+RewriteRule . /hallsgapestate/HallsGapEstate/index.php [L]
 </IfModule>
 
 # END WordPress

@@ -13,7 +13,5 @@ if ( ! $messages ) return;
 ?>
 
 <?php foreach ( $messages as $message ) : ?>
-	<div class="row">
-	<div class="small-12 small-centered columns woocommerce-message-success"><?php echo wp_kses_post( $message ); ?></div>
-	</div>
+	<div class="woocommerce-message"><li class=""><?php echo wp_kses_post( $message ); ?></li></div>
 <?php endforeach; ?>

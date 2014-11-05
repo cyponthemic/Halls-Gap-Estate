@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce, $product;
 
 ?>
-<div class="images columns">
+<!-- <div class="images columns"> -->
 
 	<?php
 		if ( has_post_thumbnail() ) {
@@ -31,7 +31,8 @@ global $post, $woocommerce, $product;
 				$gallery = '';
 			}
 
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_title, $image ), $post->ID );
+			/* echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_title, $image ), $post->ID ); */
+			the_post_thumbnail('large');
 			if (class_exists('MultiPostThumbnails')) : 
 		MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'bottle-shot');
 		endif;
@@ -45,4 +46,4 @@ global $post, $woocommerce, $product;
 
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 
-</div>
+<!-- </div> -->

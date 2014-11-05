@@ -28,15 +28,11 @@ if ( ! $product || ! $product->is_visible() )
 	return;
 
 ?>
-<a href="<?php the_permalink(); ?>">
-<div class="upsell-label columns"<?php
+<div style="text-align:center;" class="small-3 small-offset-1 left columns" data-equalizer-watch>
+<a style="text-align:center; width:100%;" href="<?php the_permalink(); ?>">
+<?php 
+the_post_thumbnail('thumbnail',array( 'class' => 'upsell_thumb' )) ?>
 
-    if ( $thumbnail_id = get_post_thumbnail_id() ) {
-        if ( $image_src = wp_get_attachment_image_src( $thumbnail_id, 'normal-bg' ) )
-            printf( ' style="background-image: url(%s);"', $image_src[0] );     
-    }
-
-?>>
-<h3 class="variety"><?php get_variety();?><br><span><?php get_vintage();?></span></h3>
-</div>
+<span style="width:100%;text-align:center; display:block;text-transform:uppercase;font-size:12px; letter-spacing:2px;padding-top:5px;"><?php get_variety();?></span>
 </a>
+</div>

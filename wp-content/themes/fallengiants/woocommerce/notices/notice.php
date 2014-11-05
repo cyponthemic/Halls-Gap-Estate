@@ -13,5 +13,5 @@ if ( ! $messages ) return;
 ?>
 
 <?php foreach ( $messages as $message ) : ?>
-	<div class="woocommerce-info"><?php echo wp_kses_post( $message ); ?></div>
+	<div class="woocommerce-info"><li class="entypo-info-circled"><?php echo wp_kses_post( $message ); ?></li></div>
 <?php endforeach; ?>

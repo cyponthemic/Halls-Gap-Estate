@@ -34,22 +34,22 @@ $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
 
-	
-		<div class="tryalso small-4 columns">
-		<h3> TRY ALSO :</h3>
+		<!-- <div class="row upsells"> -->
+
+		<div class="small-12" data-equalizer>	
+		<div class="tryalso small-3 columns" data-equalizer-watch>
+		<p>
+		Try also:
+		</p>
 		</div>
-		<div class="tryalso small-8 columns">	
-		<?php woocommerce_product_loop_start(); ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 				<?php wc_get_template_part( 'content', 'upsellproduct' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
-
-		<?php woocommerce_product_loop_end(); ?>
 		</div>
-	
+		<!-- </div> -->
 
 <?php endif;
 

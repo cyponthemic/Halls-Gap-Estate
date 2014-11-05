@@ -89,6 +89,14 @@
 	</script>
    
   <script>
+  	causeRepaintsOn = $("h1, h2, h3, p");
+
+  	jQuery(window).resize(function() {
+  	causeRepaintsOn.css("z-index", 1);
+  
+  
+  
+  
   jQuery(document).resize(function ($) {
   	
     $(".content-product-image").height($(".content-product-text").height()*1);

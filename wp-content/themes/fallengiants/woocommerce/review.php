@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 $rating = intval( get_comment_meta( $comment->comment_ID, 'rating', true ) );
 ?>
+<!-- <?php comments_template( $file, $separate_comments ); ?> -->
+test
 <li itemprop="reviews" itemscope itemtype="http://schema.org/Review" <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 
 	<div id="comment-<?php comment_ID(); ?>" class="comment_container">
