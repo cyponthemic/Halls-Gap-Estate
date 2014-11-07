@@ -85,7 +85,7 @@ if(is_front_page()){
 			</div>
 	</footer>
 	<div class="row legal">
-			Copyright 2014 - Designed by <a href="#">alexchavet</a> with amazing pictures from <a href="http://www.ivannacaptureyou.com/">Yvanna Capture you</a>
+			Copyright 2014 - Designed by <a href="#">alexchavet</a> - Pictures by <a href="http://www.ivannacaptureyou.com/">Yvanna Capture you</a>
 	</div>
 </div>
 <?php wp_footer(); ?>
