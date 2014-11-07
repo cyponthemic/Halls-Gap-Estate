@@ -33,10 +33,13 @@
   <section class="top-bar-section">
   
     <?php
+    	$home_url='#top-site';
+    	if (!is_front_page()){
+    	 $home_url=get_home_url();}
       if ( has_nav_menu( 'header-menu-left' ) ) {
-      echo  '<img class="logo-header" src="';
+      echo  '<a class="logo-header-link" href="'.$home_url.'"><img class="logo-header" src="';
       echo get_stylesheet_directory_uri();
-      echo '/bg/logo.png">';
+      echo '/bg/logo.png"></a>';
           wp_nav_menu( array(
               'theme_location' => 'header-menu-left',
               'container' => false,

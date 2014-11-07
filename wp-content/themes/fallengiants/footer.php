@@ -1,3 +1,14 @@
+<?php 
+$display_bg="block";
+if(is_front_page()){
+	$display_bg="none";
+
+}
+
+?>
+<div class="footer_bg" style="display:<?php echo $display_bg?>">
+
+</div>
 <div id="footer">
 	<div class="row">
 	<div class="small-centered large-centered large-4 small-6 footer-logo columns">

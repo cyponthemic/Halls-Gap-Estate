@@ -90,7 +90,7 @@ function register_my_menu() {
   register_nav_menu( 'footerebusiness', 'Ebusiness menu footer' );
  } 
 
-
+ add_image_size( 'banner', 1000, 400, array('center','center') ); 
   
   
   

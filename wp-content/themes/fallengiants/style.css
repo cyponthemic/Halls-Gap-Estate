@@ -216,7 +216,7 @@ background: black !important;
 	display: none;
 }
 
-.top-bar-section>img {
+.top-bar-section>a>img {
 	max-width: 150px;
 	float: left;
 	margin-top: 7px;
@@ -521,9 +521,28 @@ letter-spacing: 1px;
 	padding: 30px;
 	text-align: center;
 }
+.footer_bg{
+	
+	height: 400px;
+	background: url(bg/footer-b.png) black;
+	background-position: bottom center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+.single-product .footer_bg{
+	
+	height: 400px;
+	background: url(bg/footer.png) black;
+	background-position: bottom center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
 /* ECOMMERCE */
 .breadcrumbs {
 	display: none;
+	
 }
 .wc-single{
 	
@@ -835,4 +854,34 @@ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 font-weight: normal !important;
 font-size: 0.8125rem;
 	letter-spacing: 1px;
+}
+
+/* REVIEW */
+.star-rating>*{
+font-family: star;
+}
+.stars>span>a {
+	color: black;
+}
+#comments h2{
+	font-size: medium;
+}
+.cross-sells {
+	display: none;
+}
+.cart-subtotal>th,
+.shipping>th,
+.order-total>th{
+	padding-left: 10px !important;
+}
+.qty{
+	width: 40px !important;
+	font-size: 12px !important;
+	font-weight: 100 !important;
+	border: none !important;
+	padding-left: 5px !important;
+	text-align: left !important;
+}
+.plus,.minus{
+	background-color: white !important;
 }

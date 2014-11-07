@@ -10,8 +10,18 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 wc_print_notices();
+?>
 
-do_action( 'woocommerce_before_cart' ); ?>
+<?php do_action( 'woocommerce_before_cart' ); ?>
+<!--
+<div class="row">
+	<div class="small-12 columns">
+ <?php echo get_the_post_thumbnail( $post_id, 'banner', array( 'class' => 'cart-bg' ) ); ?> 
+	</div>
+</div>
+-->
+
+
 
 <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
 
